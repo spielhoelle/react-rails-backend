@@ -1,0 +1,11 @@
+.comment
+  %p#notice= notice
+  %p.js-comment-author
+    %strong Author:
+    = @comment.author
+  %p.js-comment-text
+    %strong Text:
+    = @comment.text
+= link_to 'Edit', edit_comment_path(@comment)
+|
+= link_to 'Back', comments_path

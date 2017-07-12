@@ -1,0 +1,13 @@
+%h2
+  Using React (no Flux framework) + Rails Backend (with
+  = succeed ")" do
+    %a{:href => "https://github.com/shakacode/react_on_rails"} react_on_rails gem
+%p This example is much simpler than the one using React + Redux and is appropriate when:
+%ul
+  %li No or minimal MVC
+  %li No async necessary
+  %li No server rendering
+  %li No pre-population of props
+%hr/
+/ This component is super simple! So no redux, no prerendering.
+= react_component('SimpleCommentScreen', props: {}, prerender: false)

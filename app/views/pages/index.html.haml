@@ -1,0 +1,7 @@
+%h2
+  = link_to "Open Source example",                               |
+    "https://github.com/shakacode/react-webpack-rails-tutorial/" |
+  of using the #{link_to "React on Rails gem", "https://github.com/shakacode/react_on_rails"}
+= render "header"
+/ Note, pre-rendering set in /config/initializers/react_on_rails.rb
+= react_component('RouterApp', id: "RouterApp-react-component-0")
